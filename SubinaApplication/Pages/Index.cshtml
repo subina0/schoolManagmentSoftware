@@ -1,0 +1,123 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<link rel="stylesheet" href="~/css/form.css"/>
+
+<h1>subodh</h1>
+ <div class="container">
+    <header>Registration</header>
+     <form action="~/js/">
+     <div class="form first">
+       <div class="details personal">
+         <span class="title">Personal details</span>
+         <div class="feilds">
+            <div class="input-feild">
+             <label id="name">Name:</label>
+             <input type="text" placeholder="First Name" required/>
+             <input type="text" placeholder="Middle Name" required/>
+             <input type="text" placeholder="Last Name" required />
+                 </div>
+                    <div class="input-feild">
+                        <label id="age">Age:</label>
+                        <input type="number" placeholder="age" required />
+                    </div>
+                        <div class="input-feild">
+                        <label id="dob">Date of birth:</label>
+                        <input type="date" placeholder="mm/yy/dd" required />
+                        </div>
+                    <div class="input-feild">
+                        <label id="mother">Mothers Name:</label>
+                        <input type="text" placeholder="Mothers Name" required />
+                        </div>
+                    <div class="input-feild">
+                        <label id="father">Fathers Name:</label>
+                        <input type="text" placeholder="Fathers Name" required />
+                    </div>
+                    <div class="input-feild">
+                        <label id="mothocc">Mothers Occupation:</label>
+                        <input type="text" placeholder="Occupation" required />
+                        </div>
+                    <div class="input-feild">
+                        <label id="fathocc">Fathers Occupation:</label>
+                        <input type="text" placeholder="Occupation" required />
+                    </div>
+                    <div class="input-feild">
+                        <label id="email">Email:</label>
+                        <input type="email" placeholder="email" required />
+                    </div>
+                    <div class="input-feild">
+                        <label id="contact">Contact no:</label>
+                        <input type="number" placeholder="Phone" required />
+                    </div>
+                    <div class="input-feild">
+                        <label for="Address" id="address">Address</label>
+                        <input type="text" placeholder="Address" required />
+                     </div>
+                    <div class="input-feild">
+                        <label id="district">District:</label>
+                        <input type="text" placeholder="District" required />
+                     </div>
+                     <div class="input-feild">
+                        <label id="ward">Ward no:</label>
+                        <input type="number" placeholder="Ward no" required />
+                     </div>
+                    <div class="input-feild">
+                        <label for="province" id="prov">Province:</label>
+                        <select id="province" name="province" >
+                            <option value="">  </option>
+                            <option value="1"> Province no 1 </option>
+                            <option value="2">Madhesh Pradesh</option>
+                            <option value="3"> Bagmati Pradesh.</option>
+                            <option value="4">Gandaki Pradesh</option>
+                            <option value="5">Lumbini Pradesh.</option>
+                            <option value="6">Karnali Pradesh.</option>
+                            <option value="7">Sudur Pashchim Pradesh</option>
+                        </select>
+                        <label for="gender" id="gende">Gender:</label>
+                        <select id="Gender" name="Gender" >
+                            <option value="">  </option>
+                            <option value="Male"> Male </option>
+                            <option value="Female">Female</option>
+                            <option value="other">other</option>
+                            </select>
+                      </div>
+                      <!--file input-->
+                    <div>
+                        <label for="formFileLg" class="form-label">Large file input example</label>
+                        <input class="form-control form-control-lg" id="formFileLg" type="file">
+                    </div>
+                    <button id="entry">
+                            <span class="btntext">Done</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                       
+
+         
+        </div>
+     </div>
+   </div>
+    </form>
+  @* <table id="display" border=1px>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Fathers Name</th>
+            <th>Mothers Name</th>
+            <th>Fathers Occupation</th>
+            <th>Mothers Occupation</th>
+            <th>Date Of Birth</th>
+            <th>Province</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Phone_no</th>
+            <th>Address</th>
+            <th>District</th>
+            <th>Ward</th>
+        </tr>
+    </table>*@
+ </div>
+ <script src="~/js/site.js"></script>
+

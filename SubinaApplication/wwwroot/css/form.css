@@ -1,0 +1,121 @@
+﻿body {
+    margin-bottom: 60px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: #b8bee1;
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 2px;
+    margin: 0 15px;
+    background-color: aliceblue;
+    box-shadow: 0 5px 10px rgba(0,0,0,1);
+}
+
+    .container header {
+        position: relative;
+        font-size: 20px;
+        font-weight: 600px;
+        color: rgba(0,0,0,1);
+    }
+
+        .container header :: before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 3px;
+            width: 27px;
+            background-color: #ffff;
+            border-radius: 8px;
+        }
+
+    .container form {
+        position: relative;
+        min-height: 490px;
+        margin-top: 16px;
+        background-color: #ffff;
+    }
+
+        .container form .details {
+            margin-top: 10px;
+        }
+
+        .container form .title {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 6px 0;
+            color: #808080;
+        }
+
+        .container form .feilds {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+form .feilds .input-feild {
+    display: flex;
+    width: calc(100% / 3 -15px);
+    flex-direction: column;
+}
+
+.input-feild label {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0,0,0,1);
+}
+
+.input-feild input {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0,0,0,1);
+    border-radius: 5px;
+    border: 1px solid #aaaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-fekild input:is(focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0,0,0,13);
+}
+
+.input-feild input[type="date"] {
+    color: #7070707;
+}
+
+    .input-feild input[type="date"]:valid {
+        color: #333;
+    }
+
+.container form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: azure;
+    background-color: #4070f4;
+    border-radius: 5px;
+    margin: 24px 0;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #265df2;
+}
+
+form button i {
+    margin: 0 6px;
+}
